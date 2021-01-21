@@ -13,45 +13,64 @@
 <div>
     <body>
     <!--Title and subtitle-->
-    <h1 class="font-bold font-black text-center text-6xl text-blue-300 "> Welcome to Cake</h1>
+    <h1 class="font-bold font-black text-center text-6xl text-blue-300"> Welcome to Cake</h1>
     <h2 class="font-bold font-black text-center text-2xl ">The premier online wedding marketplace </h2>
     </body>
 </div>
 
 <!--Second row--> 
-<div >
+<div class=" border-8 m-4 grid grid-cols-2 items-center bg-gray-100">
     <!--div1-->
     <div class="text-center">
         <!-- image -->
-         <img class="md:w-98 rounded-2xl  " src="https://www.adthena.com/wp-content/uploads/2019/06/DigitalDataCake-900x646.jpg"> 
+         <img class="md:w-{1/2} rounded-2xl" src="https://www.adthena.com/wp-content/uploads/2019/06/DigitalDataCake-900x646.jpg"> 
      </div>
     <!--div2-->
-    <div >
-        <div class="text-center">
+    <div class= "m-4">
+        <h3 class="font-bold font-black text-center text-xl text-blue-300"  > Where would you like to begin your search?</h3>
             <!-- form -->
-              
-         </div>
-    
-
-
+        <form netlify class="mx-auto justify-items-center mt-8 w-64">
+            <label class="block mt-4 font-bold" for="name">What is your name?</label>
+            <input class="p-2 w-64 border border-gray-400 rounded focus:outline-none focus:ring-black-500 focus:border-black-500" type="text" id="name" name="name">
+        
+            <label class="block mt-4 font-bold" for="vendor-location">Where will your wedding be?</label>
+            <input class="p-2 w-64 border border-gray-400 rounded focus:outline-none focus:ring-black-500 focus:border-black-500" type="text" id="favorite-color" name="favoriteColor">
+        
+            <button class=" m-20 block mt-4 text-white bg-blue-300 shadow-xl rounded px-4 py-2">Submit form!</button>
+            </form>    
+    </div>
+</div>
 
 <!--Third row--> 
-<div class="grid grid-cols-2">
-    <!--div1--> 
-    <div>
+<div class="border-8 m-4 grid items-center bg-gray-100">
+    <div class= "text-center text-2xl">
         <p>
             <!-- description of the website and main goals (with bold) -->
             Cake is a wedding vendor marketplace that helps users <strong>book</strong> their wedding vendors
             by having <strong>transparent</strong> infromation on availability and pricing. 
         </p>
     </div>
-
-
 </div>    
 
+<!--Fourth row--> 
+<div class=" items-center grid-cols-3">
+    <div>
+    <!-- image 1-->
+        <img class="md:w-{1/2} rounded-2xl" src="https://cdn.bandsforhire.net/images/blog/how-long-does-a-wedding-band-play-for.jpg?quality=70"> 
+    </div>
+    <div>
+    <!-- image 2-->
+        <img class="md:w-{1/2} rounded-2xl" src="https://i.etsystatic.com/11071750/r/il/9ee4b6/2457119859/il_1588xN.2457119859_qz1m.jpg"> 
+    </div>
+    <div>
+    <!-- image 3-->
+        <img class="md:w-{1/2} rounded-2xl" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F24%2F2019%2F01%2Fvolume-low-bun.jpg&q=85"> 
+    </div>
 </div>
 
     <div>
+      
+      
         <!-- consumer takeaways (bold & italics) --> 
     <p>
         <strong>Increases optionality.</strong> <em>Saves time.</em>
@@ -70,5 +89,10 @@
     Looking to get started? Visit or list of venue vendors <a href="venue vendors.html"> to view our vendor list</a>.
   </p>
 </body>
+
+
+
+
+
 
 </html>
